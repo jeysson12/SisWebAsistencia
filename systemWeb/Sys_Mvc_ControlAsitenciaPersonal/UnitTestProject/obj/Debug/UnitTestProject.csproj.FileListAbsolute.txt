@@ -1,0 +1,92 @@
+D:\Proyect Visual Studio\Sys_Mvc_ControlAsitenciaPersonal\UnitTestProject\bin\Debug\UnitTestProject.dll
+D:\Proyect Visual Studio\Sys_Mvc_ControlAsitenciaPersonal\UnitTestProject\bin\Debug\UnitTestProject.pdb
+D:\Proyect Visual Studio\Sys_Mvc_ControlAsitenciaPersonal\UnitTestProject\bin\Debug\Microsoft.Web.Infrastructure.dll
+D:\Proyect Visual Studio\Sys_Mvc_ControlAsitenciaPersonal\UnitTestProject\bin\Debug\System.Web.Helpers.dll
+D:\Proyect Visual Studio\Sys_Mvc_ControlAsitenciaPersonal\UnitTestProject\bin\Debug\System.Web.Mvc.dll
+D:\Proyect Visual Studio\Sys_Mvc_ControlAsitenciaPersonal\UnitTestProject\bin\Debug\System.Web.Razor.dll
+D:\Proyect Visual Studio\Sys_Mvc_ControlAsitenciaPersonal\UnitTestProject\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\Proyect Visual Studio\Sys_Mvc_ControlAsitenciaPersonal\UnitTestProject\bin\Debug\System.Web.WebPages.dll
+D:\Proyect Visual Studio\Sys_Mvc_ControlAsitenciaPersonal\UnitTestProject\bin\Debug\System.Web.WebPages.Razor.dll
+D:\Proyect Visual Studio\Sys_Mvc_ControlAsitenciaPersonal\UnitTestProject\bin\Debug\WebSite.dll
+D:\Proyect Visual Studio\Sys_Mvc_ControlAsitenciaPersonal\UnitTestProject\bin\Debug\EntityFramework.dll
+D:\Proyect Visual Studio\Sys_Mvc_ControlAsitenciaPersonal\UnitTestProject\bin\Debug\WebSite.pdb
+D:\Proyect Visual Studio\Sys_Mvc_ControlAsitenciaPersonal\UnitTestProject\bin\Debug\System.Web.Helpers.xml
+D:\Proyect Visual Studio\Sys_Mvc_ControlAsitenciaPersonal\UnitTestProject\bin\Debug\System.Web.Mvc.xml
+D:\Proyect Visual Studio\Sys_Mvc_ControlAsitenciaPersonal\UnitTestProject\bin\Debug\System.Web.Razor.xml
+D:\Proyect Visual Studio\Sys_Mvc_ControlAsitenciaPersonal\UnitTestProject\bin\Debug\System.Web.WebPages.xml
+D:\Proyect Visual Studio\Sys_Mvc_ControlAsitenciaPersonal\UnitTestProject\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\Proyect Visual Studio\Sys_Mvc_ControlAsitenciaPersonal\UnitTestProject\bin\Debug\System.Web.WebPages.Razor.xml
+D:\Proyect Visual Studio\Sys_Mvc_ControlAsitenciaPersonal\UnitTestProject\bin\Debug\EntityFramework.xml
+D:\Proyect Visual Studio\Sys_Mvc_ControlAsitenciaPersonal\UnitTestProject\obj\Debug\UnitTestProject.csprojResolveAssemblyReference.cache
+D:\Proyect Visual Studio\Sys_Mvc_ControlAsitenciaPersonal\UnitTestProject\obj\Debug\UnitTestProject.dll
+D:\Proyect Visual Studio\Sys_Mvc_ControlAsitenciaPersonal\UnitTestProject\obj\Debug\UnitTestProject.pdb
+C:\Users\Administrador\Desktop\13-03-2016\Sys_Mvc_ControlAsitenciaPersonal\UnitTestProject\bin\Debug\UnitTestProject.dll
+C:\Users\Administrador\Desktop\13-03-2016\Sys_Mvc_ControlAsitenciaPersonal\UnitTestProject\bin\Debug\UnitTestProject.pdb
+C:\Users\Administrador\Desktop\13-03-2016\Sys_Mvc_ControlAsitenciaPersonal\UnitTestProject\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\Administrador\Desktop\13-03-2016\Sys_Mvc_ControlAsitenciaPersonal\UnitTestProject\bin\Debug\System.Web.Helpers.dll
+C:\Users\Administrador\Desktop\13-03-2016\Sys_Mvc_ControlAsitenciaPersonal\UnitTestProject\bin\Debug\System.Web.Mvc.dll
+C:\Users\Administrador\Desktop\13-03-2016\Sys_Mvc_ControlAsitenciaPersonal\UnitTestProject\bin\Debug\System.Web.Razor.dll
+C:\Users\Administrador\Desktop\13-03-2016\Sys_Mvc_ControlAsitenciaPersonal\UnitTestProject\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\Administrador\Desktop\13-03-2016\Sys_Mvc_ControlAsitenciaPersonal\UnitTestProject\bin\Debug\System.Web.WebPages.dll
+C:\Users\Administrador\Desktop\13-03-2016\Sys_Mvc_ControlAsitenciaPersonal\UnitTestProject\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\Administrador\Desktop\13-03-2016\Sys_Mvc_ControlAsitenciaPersonal\UnitTestProject\bin\Debug\WebSite.dll
+C:\Users\Administrador\Desktop\13-03-2016\Sys_Mvc_ControlAsitenciaPersonal\UnitTestProject\bin\Debug\EntityFramework.dll
+C:\Users\Administrador\Desktop\13-03-2016\Sys_Mvc_ControlAsitenciaPersonal\UnitTestProject\bin\Debug\WebSite.pdb
+C:\Users\Administrador\Desktop\13-03-2016\Sys_Mvc_ControlAsitenciaPersonal\UnitTestProject\bin\Debug\System.Web.Helpers.xml
+C:\Users\Administrador\Desktop\13-03-2016\Sys_Mvc_ControlAsitenciaPersonal\UnitTestProject\bin\Debug\System.Web.Mvc.xml
+C:\Users\Administrador\Desktop\13-03-2016\Sys_Mvc_ControlAsitenciaPersonal\UnitTestProject\bin\Debug\System.Web.Razor.xml
+C:\Users\Administrador\Desktop\13-03-2016\Sys_Mvc_ControlAsitenciaPersonal\UnitTestProject\bin\Debug\System.Web.WebPages.xml
+C:\Users\Administrador\Desktop\13-03-2016\Sys_Mvc_ControlAsitenciaPersonal\UnitTestProject\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\Administrador\Desktop\13-03-2016\Sys_Mvc_ControlAsitenciaPersonal\UnitTestProject\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\Administrador\Desktop\13-03-2016\Sys_Mvc_ControlAsitenciaPersonal\UnitTestProject\bin\Debug\EntityFramework.xml
+C:\Users\Administrador\Desktop\13-03-2016\Sys_Mvc_ControlAsitenciaPersonal\UnitTestProject\obj\Debug\UnitTestProject.csprojResolveAssemblyReference.cache
+C:\Users\Administrador\Desktop\13-03-2016\Sys_Mvc_ControlAsitenciaPersonal\UnitTestProject\obj\Debug\UnitTestProject.dll
+C:\Users\Administrador\Desktop\13-03-2016\Sys_Mvc_ControlAsitenciaPersonal\UnitTestProject\obj\Debug\UnitTestProject.pdb
+C:\Users\Administrador\Desktop\aaaa\Sys_Mvc_ControlAsitenciaPersonal\UnitTestProject\bin\Debug\UnitTestProject.dll
+C:\Users\Administrador\Desktop\aaaa\Sys_Mvc_ControlAsitenciaPersonal\UnitTestProject\bin\Debug\UnitTestProject.pdb
+C:\Users\Administrador\Desktop\aaaa\Sys_Mvc_ControlAsitenciaPersonal\UnitTestProject\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\Administrador\Desktop\aaaa\Sys_Mvc_ControlAsitenciaPersonal\UnitTestProject\bin\Debug\System.Web.Helpers.dll
+C:\Users\Administrador\Desktop\aaaa\Sys_Mvc_ControlAsitenciaPersonal\UnitTestProject\bin\Debug\System.Web.Mvc.dll
+C:\Users\Administrador\Desktop\aaaa\Sys_Mvc_ControlAsitenciaPersonal\UnitTestProject\bin\Debug\System.Web.Razor.dll
+C:\Users\Administrador\Desktop\aaaa\Sys_Mvc_ControlAsitenciaPersonal\UnitTestProject\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\Administrador\Desktop\aaaa\Sys_Mvc_ControlAsitenciaPersonal\UnitTestProject\bin\Debug\System.Web.WebPages.dll
+C:\Users\Administrador\Desktop\aaaa\Sys_Mvc_ControlAsitenciaPersonal\UnitTestProject\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\Administrador\Desktop\aaaa\Sys_Mvc_ControlAsitenciaPersonal\UnitTestProject\bin\Debug\WebSite.dll
+C:\Users\Administrador\Desktop\aaaa\Sys_Mvc_ControlAsitenciaPersonal\UnitTestProject\bin\Debug\EntityFramework.dll
+C:\Users\Administrador\Desktop\aaaa\Sys_Mvc_ControlAsitenciaPersonal\UnitTestProject\bin\Debug\WebSite.pdb
+C:\Users\Administrador\Desktop\aaaa\Sys_Mvc_ControlAsitenciaPersonal\UnitTestProject\bin\Debug\System.Web.Helpers.xml
+C:\Users\Administrador\Desktop\aaaa\Sys_Mvc_ControlAsitenciaPersonal\UnitTestProject\bin\Debug\System.Web.Mvc.xml
+C:\Users\Administrador\Desktop\aaaa\Sys_Mvc_ControlAsitenciaPersonal\UnitTestProject\bin\Debug\System.Web.Razor.xml
+C:\Users\Administrador\Desktop\aaaa\Sys_Mvc_ControlAsitenciaPersonal\UnitTestProject\bin\Debug\System.Web.WebPages.xml
+C:\Users\Administrador\Desktop\aaaa\Sys_Mvc_ControlAsitenciaPersonal\UnitTestProject\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\Administrador\Desktop\aaaa\Sys_Mvc_ControlAsitenciaPersonal\UnitTestProject\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\Administrador\Desktop\aaaa\Sys_Mvc_ControlAsitenciaPersonal\UnitTestProject\bin\Debug\EntityFramework.xml
+C:\Users\Administrador\Desktop\aaaa\Sys_Mvc_ControlAsitenciaPersonal\UnitTestProject\obj\Debug\UnitTestProject.csprojResolveAssemblyReference.cache
+C:\Users\Administrador\Desktop\aaaa\Sys_Mvc_ControlAsitenciaPersonal\UnitTestProject\obj\Debug\UnitTestProject.dll
+C:\Users\Administrador\Desktop\aaaa\Sys_Mvc_ControlAsitenciaPersonal\UnitTestProject\obj\Debug\UnitTestProject.pdb
+C:\Users\Jeysson\Desktop\SisWebAsistencia0\systemWeb\Sys_Mvc_ControlAsitenciaPersonal\UnitTestProject\bin\Debug\UnitTestProject.dll
+C:\Users\Jeysson\Desktop\SisWebAsistencia0\systemWeb\Sys_Mvc_ControlAsitenciaPersonal\UnitTestProject\bin\Debug\UnitTestProject.pdb
+C:\Users\Jeysson\Desktop\SisWebAsistencia0\systemWeb\Sys_Mvc_ControlAsitenciaPersonal\UnitTestProject\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\Jeysson\Desktop\SisWebAsistencia0\systemWeb\Sys_Mvc_ControlAsitenciaPersonal\UnitTestProject\bin\Debug\Moq.dll
+C:\Users\Jeysson\Desktop\SisWebAsistencia0\systemWeb\Sys_Mvc_ControlAsitenciaPersonal\UnitTestProject\bin\Debug\nunit.framework.dll
+C:\Users\Jeysson\Desktop\SisWebAsistencia0\systemWeb\Sys_Mvc_ControlAsitenciaPersonal\UnitTestProject\bin\Debug\System.Web.Helpers.dll
+C:\Users\Jeysson\Desktop\SisWebAsistencia0\systemWeb\Sys_Mvc_ControlAsitenciaPersonal\UnitTestProject\bin\Debug\System.Web.Mvc.dll
+C:\Users\Jeysson\Desktop\SisWebAsistencia0\systemWeb\Sys_Mvc_ControlAsitenciaPersonal\UnitTestProject\bin\Debug\System.Web.Razor.dll
+C:\Users\Jeysson\Desktop\SisWebAsistencia0\systemWeb\Sys_Mvc_ControlAsitenciaPersonal\UnitTestProject\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\Jeysson\Desktop\SisWebAsistencia0\systemWeb\Sys_Mvc_ControlAsitenciaPersonal\UnitTestProject\bin\Debug\System.Web.WebPages.dll
+C:\Users\Jeysson\Desktop\SisWebAsistencia0\systemWeb\Sys_Mvc_ControlAsitenciaPersonal\UnitTestProject\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\Jeysson\Desktop\SisWebAsistencia0\systemWeb\Sys_Mvc_ControlAsitenciaPersonal\UnitTestProject\bin\Debug\WebSite.dll
+C:\Users\Jeysson\Desktop\SisWebAsistencia0\systemWeb\Sys_Mvc_ControlAsitenciaPersonal\UnitTestProject\bin\Debug\EntityFramework.dll
+C:\Users\Jeysson\Desktop\SisWebAsistencia0\systemWeb\Sys_Mvc_ControlAsitenciaPersonal\UnitTestProject\bin\Debug\WebSite.pdb
+C:\Users\Jeysson\Desktop\SisWebAsistencia0\systemWeb\Sys_Mvc_ControlAsitenciaPersonal\UnitTestProject\bin\Debug\Moq.xml
+C:\Users\Jeysson\Desktop\SisWebAsistencia0\systemWeb\Sys_Mvc_ControlAsitenciaPersonal\UnitTestProject\bin\Debug\nunit.framework.xml
+C:\Users\Jeysson\Desktop\SisWebAsistencia0\systemWeb\Sys_Mvc_ControlAsitenciaPersonal\UnitTestProject\bin\Debug\System.Web.Helpers.xml
+C:\Users\Jeysson\Desktop\SisWebAsistencia0\systemWeb\Sys_Mvc_ControlAsitenciaPersonal\UnitTestProject\bin\Debug\System.Web.Mvc.xml
+C:\Users\Jeysson\Desktop\SisWebAsistencia0\systemWeb\Sys_Mvc_ControlAsitenciaPersonal\UnitTestProject\bin\Debug\System.Web.Razor.xml
+C:\Users\Jeysson\Desktop\SisWebAsistencia0\systemWeb\Sys_Mvc_ControlAsitenciaPersonal\UnitTestProject\bin\Debug\System.Web.WebPages.xml
+C:\Users\Jeysson\Desktop\SisWebAsistencia0\systemWeb\Sys_Mvc_ControlAsitenciaPersonal\UnitTestProject\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\Jeysson\Desktop\SisWebAsistencia0\systemWeb\Sys_Mvc_ControlAsitenciaPersonal\UnitTestProject\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\Jeysson\Desktop\SisWebAsistencia0\systemWeb\Sys_Mvc_ControlAsitenciaPersonal\UnitTestProject\bin\Debug\EntityFramework.xml
+C:\Users\Jeysson\Desktop\SisWebAsistencia0\systemWeb\Sys_Mvc_ControlAsitenciaPersonal\UnitTestProject\obj\Debug\UnitTestProject.csprojResolveAssemblyReference.cache
+C:\Users\Jeysson\Desktop\SisWebAsistencia0\systemWeb\Sys_Mvc_ControlAsitenciaPersonal\UnitTestProject\obj\Debug\UnitTestProject.dll
+C:\Users\Jeysson\Desktop\SisWebAsistencia0\systemWeb\Sys_Mvc_ControlAsitenciaPersonal\UnitTestProject\obj\Debug\UnitTestProject.pdb

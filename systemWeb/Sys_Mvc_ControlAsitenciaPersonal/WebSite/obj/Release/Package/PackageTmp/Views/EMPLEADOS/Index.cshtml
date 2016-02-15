@@ -1,0 +1,73 @@
+﻿@model IEnumerable<WebSite.Models.EMPLEADOS>
+
+@{
+    ViewBag.Title = "Empleados";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@Html.Partial("~/Views/EMPLEADOS/_Partial_NavPills_Empleados.cshtml")
+<div class="col-md-9">
+    <h2>Listado de Empleados</h2>
+    <p>
+        <input type="button" value="Crear Nuevo Empleado" class="btn btn-info" onclick="location.href='@Url.Action("Create", "EMPLEADOS" )'" />
+    </p>
+    <div class="table-responsive">
+        <table class="table">
+            <tr class="active">
+                <th>
+                    @Html.DisplayName("ID")
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.DNI)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.NOMBRES)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.APELLIDOS)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.HORA_INGRESO)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.HORA_SALIDA)
+                </th>
+                <th>@Html.DisplayName("Acciones")</th>
+            </tr>
+
+            @foreach (var item in Model){
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ID_EMPLEADO)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.DNI)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.NOMBRES)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.APELLIDOS)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.HORA_INGRESO)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.HORA_SALIDA)
+                    </td>
+                    <td>
+                        <a href="@Url.Action("Details", "EMPLEADOS", new { id = item.ID_EMPLEADO })">
+                            <span class="glyphicon glyphicon-list-alt" aria-hidden="true" title="DETALLES DE EMPLEADO"></span>
+                        </a>|
+                        <a href="@Url.Action("Edit", "EMPLEADOS", new {id = item.ID_EMPLEADO})">
+                            <span class="glyphicon glyphicon-wrench" aria-hidden="true" title="EDITAR EMPLEADO"></span>
+                        </a>|
+                        <a href="@Url.Action("Delete", "EMPLEADOS", new { id = item.ID_EMPLEADO})">
+                            <span class="glyphicon glyphicon-trash" aria-hidden="true" title="ELIMINAR EMPLEADO"></span>
+                        </a>
+                    </td>
+            </tr>
+            }
+
+        </table>
+    </div>
+</div>

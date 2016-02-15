@@ -1,0 +1,137 @@
+use master
+
+go 
+
+if exists (select name from sysdatabases where name='sys_web_controlAsistenciaPersonal')
+drop database sys_web_controlAsistenciaPersonal
+
+go
+
+create database sys_web_controlAsistenciaPersonal
+
+GO
+
+USE sys_web_controlAsistenciaPersonal
+
+GO
+
+/************************************
+TABLA: DISTRITO
+************************************/
+
+CREATE TABLE DISTRITOS(
+	ID_DISTRITO INT PRIMARY KEY NOT NULL IDENTITY(1,1),
+	NOMBRE NVARCHAR(100) NOT NULL
+)
+
+GO
+/************************************
+TABLA: AREAS
+************************************/
+
+CREATE TABLE AREAS(
+	ID_AREA INT PRIMARY KEY NOT NULL IDENTITY(1,1),
+	NOMBRE NVARCHAR(100) NOT NULL
+)
+
+GO
+/************************************
+TABLA: CARGOS
+************************************/
+
+CREATE TABLE CARGOS(
+	ID_CARGOS INT PRIMARY KEY NOT NULL IDENTITY(1,1),
+	NOMBRE NVARCHAR(100) NOT NULL,
+	ID_AREA INT FOREIGN KEY REFERENCES AREAS(ID_AREA)
+)
+
+GO
+
+/************************************
+TABLA: EMPLEADOS
+************************************/
+
+CREATE TABLE EMPLEADOS(
+	ID_EMPLEADO INT PRIMARY KEY NOT NULL IDENTITY(1,1),
+	DNI CHAR(8) NOT NULL,
+	NOMBRES NVARCHAR(100) NOT NULL,
+	APELLIDOS NVARCHAR(100) NOT NULL,
+	SEXO CHAR(1) NOT NULL,
+	HORA_INGRESO TIME(7) NOT NULL,
+	HORA_SALIDA TIME(7) NOT NULL,
+	ID_AREA INT FOREIGN KEY REFERENCES AREAS (ID_AREA),
+	ID_CARGO INT FOREIGN KEY REFERENCES CARGOS(ID_CARGOS),
+	ID_DISTRITO INT FOREIGN KEY REFERENCES DISTRITOS(ID_DISTRITO),
+	DIRECCION NVARCHAR(150) NOT NULL,
+	TELEFONO NVARCHAR(20) NOT NULL,
+	CELULAR NVARCHAR(20) NOT NULL
+)
+
+GO
+
+
+/************************************
+TABLA: USUARIOS
+************************************/
+
+CREATE TABLE USUARIOS(
+	ID_USUARIO NVARCHAR(10) PRIMARY KEY NOT NULL,
+	CONTRASEÑA NVARCHAR(10) NOT NULL,
+	TIPO VARCHAR(15) NOT NULL,
+	ID_EMPLEADO INT FOREIGN KEY REFERENCES EMPLEADOS(ID_EMPLEADO) null,
+	ACTIVO BIT
+)
+
+go
+
+/************************************
+TABLA: ASISTENCIAS
+************************************/
+
+CREATE TABLE ASISTENCIAS(
+	ID_sis INT PRIMARY KEY NOT NULL IDENTITY(1,1),
+	FECHA nvarchar(50),
+	ID_EMPLEADO INT /*FOREIGN KEY REFERENCES EMPLEADOS(ID_EMPLEADO)*/,
+	HORA_INGRESO nvarchar(50)/*TIME(7)*/ ,
+	HORA_SALIDA nvarchar(50)/*TIME(7)*/ ,
+	OBSERVACIONES NVARCHAR(200) 
+)
+
+go
+
+INSERT INTO DISTRITOS VALUES ('Cercado de Lima');
+INSERT INTO DISTRITOS VALUES ('Los Olivos');
+INSERT INTO DISTRITOS VALUES ('Independencia');
+INSERT INTO DISTRITOS VALUES ('San Miguel');
+INSERT INTO DISTRITOS VALUES ('Surco');
+INSERT INTO DISTRITOS VALUES ('Miraflores');
+INSERT INTO DISTRITOS VALUES ('San Isidro');
+INSERT INTO DISTRITOS VALUES ('San Juan de Miraflores');
+
+go
+
+INSERT INTO AREAS VALUES ('Sistemas');
+INSERT INTO AREAS VALUES ('Administración y Finanzas');
+INSERT INTO AREAS VALUES ('Ventas');
+INSERT INTO AREAS VALUES ('Logistica');
+INSERT INTO AREAS VALUES ('Recursos Humanos');
+INSERT INTO AREAS VALUES ('Produccion');
+
+go
+
+INSERT INTO CARGOS VALUES ('Analista Programador',1);
+INSERT INTO CARGOS VALUES ('Soporte Tecnico',1);
+INSERT INTO CARGOS VALUES ('Jefe de Sistemas',1);
+INSERT INTO CARGOS VALUES ('Tesoreria',1);
+INSERT INTO CARGOS VALUES ('Tesoreria',1);
+INSERT INTO CARGOS VALUES ('Operario',6);
+
+go
+
+INSERT INTO EMPLEADOS VALUES ('12345678','Jose Antonio', 
+'Lavarte Garcia', 'M', '7:00:00', '17:00:00', 1, 1, 1, 
+'', '345-4545', '987 565 453');
+
+go
+
+INSERT INTO USUARIOS VALUES ('Admin','Admin','Administrador',null,1)

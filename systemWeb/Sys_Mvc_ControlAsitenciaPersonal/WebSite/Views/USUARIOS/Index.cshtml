@@ -1,0 +1,69 @@
+﻿@model IEnumerable<WebSite.Models.USUARIOS>
+
+@{
+    ViewBag.Title = "Usuarios";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@Html.Partial("~/Views/USUARIOS/_Partial_NavPills_Usuario.cshtml")
+<div class="col-md-9">
+    <h2>Listado de Usuarios</h2>
+
+    <p>
+        <input type="button" value="Crear nuevo usuario" class="btn btn-info" onclick="location.href='@Url.Action("Create", "USUARIOS" )'" />
+    </p>
+    <div class="table-responsive">
+        <table class="table">
+            <tr class="active">
+                <th>
+                    @Html.DisplayName("ID")
+                </th>
+                <th>
+                    @Html.DisplayName("TIPO")
+                </th>
+                <th>
+                    @Html.DisplayName("EMPLEADO")
+                </th>
+                <th>
+                    @Html.DisplayName("ACTIVO")
+                </th>
+                <th>
+                    @Html.DisplayName("ACCIONES")
+                </th>
+            </tr>
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ID_USUARIO)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.TIPO)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.EMPLEADOS.NOMBRES)&nbsp;@Html.DisplayFor(modelItem => item.EMPLEADOS.APELLIDOS)
+                    </td>
+                    <td>
+                        @if (Convert.ToBoolean(item.ACTIVO.ToString()) == true)
+                        {
+                            @Html.DisplayName("SI")
+                        }
+                        else
+                        {
+                            @Html.DisplayName("NO")
+                        }
+                    </td>
+                    <td>
+                        <a href="@Url.Action("Edit", "USUARIOS", new {id = item.ID_USUARIO})">
+                            <span class="glyphicon glyphicon-wrench" aria-hidden="true" title="EDITAR USUARIO"></span>
+                        </a>|
+                        <a href="@Url.Action("Delete", "USUARIOS", new { id = item.ID_USUARIO })">
+                            <span class="glyphicon glyphicon-trash" aria-hidden="true" title="ELIMINAR USUARIO"></span>
+                        </a>
+                    </td>
+                </tr>
+            }
+
+        </table>
+    </div>
+</div>

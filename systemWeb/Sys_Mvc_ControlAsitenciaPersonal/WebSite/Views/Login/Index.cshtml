@@ -1,0 +1,45 @@
+﻿@model WebSite.Models.Login
+<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewBag.Title</title>
+    <link href="~/Estilos/Adecuacion.css" rel="stylesheet" />
+    <link href="~/Estilos/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+    
+    <div class="container">
+        @using (Html.BeginForm("Index", "Login", FormMethod.Post, new { @class = "form-signin" }))
+        {
+
+            @Html.AntiForgeryToken()
+            @Html.ValidationSummary(true)
+
+            if (@ViewBag.Message != null)
+            {
+                <div style="border:1px solid red">
+                    @ViewBag.Message
+                </div>
+            }
+
+            <h2 class="form-signin-heading">Iniciar Session</h2>
+
+            @Html.LabelFor(u => u.ID_USUARIO, new { @class = "sr-only" })
+            @Html.TextBoxFor(u => u.ID_USUARIO, new { @class = "form-control", placeholder = "Usuario" })
+
+            
+            @Html.LabelFor(u => u.CONTRASEÑA, new { @class = "sr-only" })
+            @Html.PasswordFor(u => u.CONTRASEÑA, new { @class = "form-control", placeholder = "Contraseña"})
+
+            <button class="btn btn-lg btn-primary btn-block" type="submit">Entrar</button>
+    <div>@Html.ValidationMessageFor(u => u.ID_USUARIO)</div>
+    <div>@Html.ValidationMessageFor(u => u.CONTRASEÑA)</div>
+        }
+
+    </div>
+    
+    <script src="/Scripts/jquery.validate.min.js" type="text/javascript"></script>
+    <script src="/Scripts/jquery.validate.unobtrusive.min.js" type="text/javascript"></script>
+
+</body>
+</html>

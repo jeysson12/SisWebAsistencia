@@ -1,0 +1,45 @@
+﻿@model WebSite.Models.AREAS
+
+@{
+    ViewBag.Title = ":: Area ::";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@Html.Partial("~/Views/Areas/_Partial_NavPills_Areas.cshtml")
+<div class="col-md-9">
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-horizontal">
+            <h4>Editar Area</h4>
+            <hr />
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+            @Html.HiddenFor(model => model.ID_AREA)
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.ID_AREA , htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.DisplayFor(model => model.ID_AREA, new { htmlAttributes = new { @class = "form-control" } })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.NOMBRE, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.NOMBRE, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.NOMBRE, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <input type="submit" value="Guardar" class="btn btn-success" />
+                </div>
+            </div>
+        </div>
+    }
+
+    <div>
+        <input type="button" value="Regresar" class="btn btn-danger" onclick="location.href='@Url.Action("Index", "Areas" )'" />
+    </div>
+</div>

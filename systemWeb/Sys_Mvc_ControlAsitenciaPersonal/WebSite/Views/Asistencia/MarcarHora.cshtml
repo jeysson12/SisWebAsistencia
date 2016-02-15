@@ -1,0 +1,25 @@
+﻿
+@{
+    ViewBag.Title = "Marcar Hora";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+    <div class="col-md-12">
+        <h2>Marcacion de Hora</h2>
+        <div class="row">
+            <h3>
+                <p class="text-center">
+                    @ViewData["MenSal"].ToString()
+                </p>
+            </h3>
+        </div>
+        <div class="row">
+            <p class="text-center">
+                @Html.ActionLink("Presionar click en este enlace, para regresar.","Index");
+            </p>
+        </div>
+    </div>
+</div>
+
+

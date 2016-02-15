@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="sys_web_controlAsistenciaPersonalModelStoreContainer" CdmEntityContainer="sys_web_controlAsistenciaPersonalEntities">
+    <EntitySetMapping Name="AREAS">
+      <EntityTypeMapping TypeName="sys_web_controlAsistenciaPersonalModel.AREAS">
+        <MappingFragment StoreEntitySet="AREAS">
+          <ScalarProperty Name="ID_AREA" ColumnName="ID_AREA" />
+          <ScalarProperty Name="NOMBRE" ColumnName="NOMBRE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ASISTENCIAS">
+      <EntityTypeMapping TypeName="sys_web_controlAsistenciaPersonalModel.ASISTENCIAS">
+        <MappingFragment StoreEntitySet="ASISTENCIAS">
+          <ScalarProperty Name="ID_sis" ColumnName="ID_sis" />
+          <ScalarProperty Name="FECHA" ColumnName="FECHA" />
+          <ScalarProperty Name="ID_EMPLEADO" ColumnName="ID_EMPLEADO" />
+          <ScalarProperty Name="HORA_INGRESO" ColumnName="HORA_INGRESO" />
+          <ScalarProperty Name="HORA_SALIDA" ColumnName="HORA_SALIDA" />
+          <ScalarProperty Name="OBSERVACIONES" ColumnName="OBSERVACIONES" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CARGOS">
+      <EntityTypeMapping TypeName="sys_web_controlAsistenciaPersonalModel.CARGOS">
+        <MappingFragment StoreEntitySet="CARGOS">
+          <ScalarProperty Name="ID_CARGOS" ColumnName="ID_CARGOS" />
+          <ScalarProperty Name="NOMBRE" ColumnName="NOMBRE" />
+          <ScalarProperty Name="ID_AREA" ColumnName="ID_AREA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DISTRITOS">
+      <EntityTypeMapping TypeName="sys_web_controlAsistenciaPersonalModel.DISTRITOS">
+        <MappingFragment StoreEntitySet="DISTRITOS">
+          <ScalarProperty Name="ID_DISTRITO" ColumnName="ID_DISTRITO" />
+          <ScalarProperty Name="NOMBRE" ColumnName="NOMBRE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EMPLEADOS">
+      <EntityTypeMapping TypeName="sys_web_controlAsistenciaPersonalModel.EMPLEADOS">
+        <MappingFragment StoreEntitySet="EMPLEADOS">
+          <ScalarProperty Name="ID_EMPLEADO" ColumnName="ID_EMPLEADO" />
+          <ScalarProperty Name="DNI" ColumnName="DNI" />
+          <ScalarProperty Name="NOMBRES" ColumnName="NOMBRES" />
+          <ScalarProperty Name="APELLIDOS" ColumnName="APELLIDOS" />
+          <ScalarProperty Name="SEXO" ColumnName="SEXO" />
+          <ScalarProperty Name="HORA_INGRESO" ColumnName="HORA_INGRESO" />
+          <ScalarProperty Name="HORA_SALIDA" ColumnName="HORA_SALIDA" />
+          <ScalarProperty Name="ID_AREA" ColumnName="ID_AREA" />
+          <ScalarProperty Name="ID_CARGO" ColumnName="ID_CARGO" />
+          <ScalarProperty Name="ID_DISTRITO" ColumnName="ID_DISTRITO" />
+          <ScalarProperty Name="DIRECCION" ColumnName="DIRECCION" />
+          <ScalarProperty Name="TELEFONO" ColumnName="TELEFONO" />
+          <ScalarProperty Name="CELULAR" ColumnName="CELULAR" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="USUARIOS">
+      <EntityTypeMapping TypeName="sys_web_controlAsistenciaPersonalModel.USUARIOS">
+        <MappingFragment StoreEntitySet="USUARIOS">
+          <ScalarProperty Name="ID_USUARIO" ColumnName="ID_USUARIO" />
+          <ScalarProperty Name="CONTRASEÑA" ColumnName="CONTRASEÑA" />
+          <ScalarProperty Name="TIPO" ColumnName="TIPO" />
+          <ScalarProperty Name="ID_EMPLEADO" ColumnName="ID_EMPLEADO" />
+          <ScalarProperty Name="ACTIVO" ColumnName="ACTIVO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

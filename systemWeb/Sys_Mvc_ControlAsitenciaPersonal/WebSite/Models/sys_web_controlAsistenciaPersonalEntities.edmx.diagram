@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="1ada70eac7784b3c8a249214fc28c178" Name="Diagram1">
+        <EntityTypeShape EntityType="sys_web_controlAsistenciaPersonalModel.AREAS" Width="1.5" PointX="0.75" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="sys_web_controlAsistenciaPersonalModel.ASISTENCIAS" Width="1.5" PointX="0.75" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="sys_web_controlAsistenciaPersonalModel.CARGOS" Width="1.5" PointX="3" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="sys_web_controlAsistenciaPersonalModel.DISTRITOS" Width="1.5" PointX="3" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="sys_web_controlAsistenciaPersonalModel.EMPLEADOS" Width="1.5" PointX="5.25" PointY="2.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="sys_web_controlAsistenciaPersonalModel.USUARIOS" Width="1.5" PointX="7.5" PointY="3.5" IsExpanded="true" />
+        <AssociationConnector Association="sys_web_controlAsistenciaPersonalModel.FK__CARGOS__ID_AREA__145C0A3F" ManuallyRouted="false" />
+        <AssociationConnector Association="sys_web_controlAsistenciaPersonalModel.FK__EMPLEADOS__ID_AR__173876EA" ManuallyRouted="false" />
+        <AssociationConnector Association="sys_web_controlAsistenciaPersonalModel.FK__EMPLEADOS__ID_CA__182C9B23" ManuallyRouted="false" />
+        <AssociationConnector Association="sys_web_controlAsistenciaPersonalModel.FK__EMPLEADOS__ID_DI__1920BF5C" ManuallyRouted="false" />
+        <AssociationConnector Association="sys_web_controlAsistenciaPersonalModel.FK__USUARIOS__ID_EMP__1BFD2C07" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

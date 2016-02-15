@@ -1,0 +1,45 @@
+﻿@model IEnumerable<WebSite.Models.AREAS>
+
+@{
+    ViewBag.Title = "::Areas::";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@Html.Partial("~/Views/Areas/_Partial_NavPills_Areas.cshtml")
+<div class="col-md-9">
+    <h2>Listado de Areas</h2>
+
+    <p>
+        <input type="button" value="Crear nuevo area" class="btn btn-info" onclick="location.href='@Url.Action("Create", "Areas" )'" />
+    </p>
+
+    <div class="table-responsive">
+        <table class="table">
+            <tr class="active">
+                <th>@Html.Label("ID")</th>
+                <th>@Html.Label("Nombre de Area")</th>
+                <th>@Html.Label("Acciones")</th>
+            </tr>
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ID_AREA)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.NOMBRE)
+                    </td>
+                    <td>
+                        <a href="@Url.Action("Edit", "Areas", new {id = item.ID_AREA})">
+                            <span class="glyphicon glyphicon-wrench" aria-hidden="true" title="EDITAR AREA"></span>
+                        </a>|
+                        <a href="@Url.Action("Delete", "Areas", new { id = item.ID_AREA })">
+                            <span class="glyphicon glyphicon-trash" aria-hidden="true" title="ELIMINAR AREA"></span>
+                        </a>
+                    </td>
+                </tr>
+            }
+
+        </table>
+    </div>
+</div>

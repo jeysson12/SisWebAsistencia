@@ -1,0 +1,62 @@
+﻿@model IEnumerable<WebSite.Models.EMPLEADOS>
+
+@{
+    ViewBag.Title = "Asistencia";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="col-md-12">
+    
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayName("ID")
+            </th>
+            <th>
+                @Html.DisplayName("Apellidos y Nombres")
+            </th>
+            <th>
+                @Html.DisplayName("Area")
+            </th>
+            <th>
+                @Html.DisplayName("Cargo")
+            </th>
+            <th>
+                @Html.DisplayName("Hora Ingreso")
+            </th>    
+            <th>
+                @Html.DisplayName("Hora Salida")
+            </th>
+            <th>
+                @Html.DisplayName("Acciones")
+            </th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ID_EMPLEADO)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.APELLIDOS)&nbsp;@Html.DisplayFor(modelItem => item.NOMBRES)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.AREAS.NOMBRE)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CARGOS.NOMBRE)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.HORA_INGRESO)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.HORA_SALIDA)
+                </td>
+                <td>
+                    @Html.ActionLink("Marcar Hora", "MarcarHora", new { id = item.ID_EMPLEADO })
+                </td>
+            </tr>
+        }
+
+    </table>
+</div>

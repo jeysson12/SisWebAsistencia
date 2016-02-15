@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="sys_web_controlAsistenciaPersonalModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="AREAS">
+    <Key>
+      <PropertyRef Name="ID_AREA" />
+    </Key>
+    <Property Name="ID_AREA" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NOMBRE" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="CARGOS" Relationship="Self.FK__CARGOS__ID_AREA__164452B1" FromRole="AREAS" ToRole="CARGOS" />
+  </EntityType>
+  <EntityType Name="CARGOS">
+    <Key>
+      <PropertyRef Name="ID_CARGOS" />
+    </Key>
+    <Property Name="ID_CARGOS" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NOMBRE" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ID_AREA" Type="Int32" />
+    <NavigationProperty Name="AREAS" Relationship="Self.FK__CARGOS__ID_AREA__164452B1" FromRole="CARGOS" ToRole="AREAS" />
+    <NavigationProperty Name="EMPLEADOS" Relationship="Self.FK__EMPLEADOS__ID_CA__1A14E395" FromRole="CARGOS" ToRole="EMPLEADOS" />
+  </EntityType>
+  <EntityType Name="DISTRITOS">
+    <Key>
+      <PropertyRef Name="ID_DISTRITO" />
+    </Key>
+    <Property Name="ID_DISTRITO" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NOMBRE" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="EMPLEADOS" Relationship="Self.FK__EMPLEADOS__ID_DI__1B0907CE" FromRole="DISTRITOS" ToRole="EMPLEADOS" />
+  </EntityType>
+  <EntityType Name="EMPLEADOS">
+    <Key>
+      <PropertyRef Name="ID_EMPLEADO" />
+    </Key>
+    <Property Name="ID_EMPLEADO" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DNI" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="NOMBRES" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="APELLIDOS" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="SEXO" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="HORA_INGRESO" Type="Time" Nullable="false" Precision="7" />
+    <Property Name="HORA_SALIDA" Type="Time" Nullable="false" Precision="7" />
+    <Property Name="ID_USUARIO" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="ID_CARGO" Type="Int32" />
+    <Property Name="ID_DISTRITO" Type="Int32" />
+    <Property Name="DIRECCION" Type="String" MaxLength="150" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="TELEFONO" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="CELULAR" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="CARGOS" Relationship="Self.FK__EMPLEADOS__ID_CA__1A14E395" FromRole="EMPLEADOS" ToRole="CARGOS" />
+    <NavigationProperty Name="DISTRITOS" Relationship="Self.FK__EMPLEADOS__ID_DI__1B0907CE" FromRole="EMPLEADOS" ToRole="DISTRITOS" />
+    <NavigationProperty Name="ASISTENCIAS" Relationship="Self.FK__ASISTENCI__ID_EM__1CF15040" FromRole="EMPLEADOS" ToRole="ASISTENCIAS" />
+    <NavigationProperty Name="USUARIOS" Relationship="Self.FK__EMPLEADOS__ID_US__1920BF5C" FromRole="EMPLEADOS" ToRole="USUARIOS" />
+    <NavigationProperty Name="USUARIOS1" Relationship="sys_web_controlAsistenciaPersonalModel.FK__USUARIOS__ID_EMP__1B0907CE" FromRole="EMPLEADOS" ToRole="USUARIOS" />
+  </EntityType>
+  <EntityType Name="USUARIOS">
+    <Key>
+      <PropertyRef Name="ID_USUARIO" />
+    </Key>
+    <Property Name="ID_USUARIO" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="CONTRASEÑA" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="EMPLEADOS" Relationship="Self.FK__EMPLEADOS__ID_US__1920BF5C" FromRole="USUARIOS" ToRole="EMPLEADOS" />
+    <Property Name="TIPO" Type="String" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="ID_EMPLEADO" Type="Int32" />
+    <Property Name="ACTIVO" Type="Boolean" />
+    <NavigationProperty Name="EMPLEADOS1" Relationship="sys_web_controlAsistenciaPersonalModel.FK__USUARIOS__ID_EMP__1B0907CE" FromRole="USUARIOS" ToRole="EMPLEADOS" />
+  </EntityType>
+  <EntityType Name="ASISTENCIAS">
+    <Key>
+      <PropertyRef Name="FECHA" />
+      <PropertyRef Name="HORA_INGRESO" />
+      <PropertyRef Name="HORA_SALIDA" />
+    </Key>
+    <Property Name="FECHA" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="ID_EMPLEADO" Type="Int32" />
+    <Property Name="HORA_INGRESO" Type="Time" Nullable="false" Precision="7" />
+    <Property Name="HORA_SALIDA" Type="Time" Nullable="false" Precision="7" />
+    <Property Name="OBSERVACIONES" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="EMPLEADOS" Relationship="Self.FK__ASISTENCI__ID_EM__1CF15040" FromRole="ASISTENCIAS" ToRole="EMPLEADOS" />
+  </EntityType>
+  <Association Name="FK__CARGOS__ID_AREA__164452B1">
+    <End Role="AREAS" Type="Self.AREAS" Multiplicity="0..1" />
+    <End Role="CARGOS" Type="Self.CARGOS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AREAS">
+        <PropertyRef Name="ID_AREA" />
+      </Principal>
+      <Dependent Role="CARGOS">
+        <PropertyRef Name="ID_AREA" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__EMPLEADOS__ID_CA__1A14E395">
+    <End Role="CARGOS" Type="Self.CARGOS" Multiplicity="0..1" />
+    <End Role="EMPLEADOS" Type="Self.EMPLEADOS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CARGOS">
+        <PropertyRef Name="ID_CARGOS" />
+      </Principal>
+      <Dependent Role="EMPLEADOS">
+        <PropertyRef Name="ID_CARGO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__EMPLEADOS__ID_DI__1B0907CE">
+    <End Role="DISTRITOS" Type="Self.DISTRITOS" Multiplicity="0..1" />
+    <End Role="EMPLEADOS" Type="Self.EMPLEADOS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DISTRITOS">
+        <PropertyRef Name="ID_DISTRITO" />
+      </Principal>
+      <Dependent Role="EMPLEADOS">
+        <PropertyRef Name="ID_DISTRITO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ASISTENCI__ID_EM__1CF15040">
+    <End Role="EMPLEADOS" Type="Self.EMPLEADOS" Multiplicity="0..1" />
+    <End Role="ASISTENCIAS" Type="Self.ASISTENCIAS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EMPLEADOS">
+        <PropertyRef Name="ID_EMPLEADO" />
+      </Principal>
+      <Dependent Role="ASISTENCIAS">
+        <PropertyRef Name="ID_EMPLEADO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__EMPLEADOS__ID_US__1920BF5C">
+    <End Role="USUARIOS" Type="Self.USUARIOS" Multiplicity="0..1" />
+    <End Role="EMPLEADOS" Type="Self.EMPLEADOS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="USUARIOS">
+        <PropertyRef Name="ID_USUARIO" />
+      </Principal>
+      <Dependent Role="EMPLEADOS">
+        <PropertyRef Name="ID_USUARIO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="sys_web_controlAsistenciaPersonalEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="AREAS" EntityType="Self.AREAS" />
+    <EntitySet Name="CARGOS" EntityType="Self.CARGOS" />
+    <EntitySet Name="DISTRITOS" EntityType="Self.DISTRITOS" />
+    <EntitySet Name="EMPLEADOS" EntityType="Self.EMPLEADOS" />
+    <EntitySet Name="USUARIOS" EntityType="Self.USUARIOS" />
+    <EntitySet Name="ASISTENCIAS" EntityType="Self.ASISTENCIAS" />
+    <AssociationSet Name="FK__CARGOS__ID_AREA__164452B1" Association="Self.FK__CARGOS__ID_AREA__164452B1">
+      <End Role="AREAS" EntitySet="AREAS" />
+      <End Role="CARGOS" EntitySet="CARGOS" />
+    </AssociationSet>
+    <AssociationSet Name="FK__EMPLEADOS__ID_CA__1A14E395" Association="Self.FK__EMPLEADOS__ID_CA__1A14E395">
+      <End Role="CARGOS" EntitySet="CARGOS" />
+      <End Role="EMPLEADOS" EntitySet="EMPLEADOS" />
+    </AssociationSet>
+    <AssociationSet Name="FK__EMPLEADOS__ID_DI__1B0907CE" Association="Self.FK__EMPLEADOS__ID_DI__1B0907CE">
+      <End Role="DISTRITOS" EntitySet="DISTRITOS" />
+      <End Role="EMPLEADOS" EntitySet="EMPLEADOS" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ASISTENCI__ID_EM__1CF15040" Association="Self.FK__ASISTENCI__ID_EM__1CF15040">
+      <End Role="EMPLEADOS" EntitySet="EMPLEADOS" />
+      <End Role="ASISTENCIAS" EntitySet="ASISTENCIAS" />
+    </AssociationSet>
+    <AssociationSet Name="FK__EMPLEADOS__ID_US__1920BF5C" Association="Self.FK__EMPLEADOS__ID_US__1920BF5C">
+      <End Role="USUARIOS" EntitySet="USUARIOS" />
+      <End Role="EMPLEADOS" EntitySet="EMPLEADOS" />
+    </AssociationSet>
+    <AssociationSet Name="FK__USUARIOS__ID_EMP__1B0907CE" Association="sys_web_controlAsistenciaPersonalModel.FK__USUARIOS__ID_EMP__1B0907CE">
+      <End Role="EMPLEADOS" EntitySet="EMPLEADOS" />
+      <End Role="USUARIOS" EntitySet="USUARIOS" />
+    </AssociationSet>
+  </EntityContainer>
+  <Association Name="FK__USUARIOS__ID_EMP__1B0907CE">
+    <End Type="sys_web_controlAsistenciaPersonalModel.EMPLEADOS" Role="EMPLEADOS" Multiplicity="0..1" />
+    <End Type="sys_web_controlAsistenciaPersonalModel.USUARIOS" Role="USUARIOS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EMPLEADOS">
+        <PropertyRef Name="ID_EMPLEADO" />
+      </Principal>
+      <Dependent Role="USUARIOS">
+        <PropertyRef Name="ID_EMPLEADO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

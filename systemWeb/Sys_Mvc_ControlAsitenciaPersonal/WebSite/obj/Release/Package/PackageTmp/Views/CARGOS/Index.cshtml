@@ -1,0 +1,55 @@
+﻿@model IEnumerable<WebSite.Models.CARGOS>
+
+@{
+    ViewBag.Title = "Cargos";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@Html.Partial("~/Views/CARGOS/_Partial_NavPills_Cargos.cshtml")
+
+<div class="col-md-9">
+    <h2>Listado de Cargos</h2>
+
+    <p>
+        <input type="button" value="Crear nuevo Cargo" class="btn btn-info" onclick="location.href='@Url.Action("Create", "CARGOS" )'" />
+    </p>
+    <div class="table-responsive">
+        <table class="table">
+            <tr class="active">
+                <th>
+                    @Html.DisplayName("ID")
+                </th>
+                <th>
+                    @Html.DisplayName("Cargo")
+                </th>
+                <th>
+                    @Html.DisplayName("Area")
+                </th>
+                <th>Acciones</th>
+            </tr>
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ID_CARGOS)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.NOMBRE)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.AREAS.NOMBRE)
+                    </td>
+                    <td>
+                        <a href="@Url.Action("Edit", "CARGOS", new {id = item.ID_CARGOS})">
+                            <span class="glyphicon glyphicon-wrench" aria-hidden="true" title="EDITAR CARGO"></span>
+                        </a>|
+                        <a href="@Url.Action("Delete", "CARGOS", new { id = item.ID_CARGOS})">
+                            <span class="glyphicon glyphicon-trash" aria-hidden="true" title="ELIMINAR CARGO"></span>
+                        </a>
+                    </td>
+                </tr>
+            }
+
+        </table>
+    </div>
+</div>

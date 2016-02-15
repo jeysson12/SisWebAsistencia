@@ -1,0 +1,95 @@
+D:\Proyect Visual Studio\Sys_Mvc_ControlAsitenciaPersonal\WebSite\bin\WebSite.dll.config
+D:\Proyect Visual Studio\Sys_Mvc_ControlAsitenciaPersonal\WebSite\bin\WebSite.dll
+D:\Proyect Visual Studio\Sys_Mvc_ControlAsitenciaPersonal\WebSite\bin\WebSite.pdb
+D:\Proyect Visual Studio\Sys_Mvc_ControlAsitenciaPersonal\WebSite\bin\EntityFramework.dll
+D:\Proyect Visual Studio\Sys_Mvc_ControlAsitenciaPersonal\WebSite\bin\EntityFramework.SqlServer.dll
+D:\Proyect Visual Studio\Sys_Mvc_ControlAsitenciaPersonal\WebSite\bin\nunit.framework.dll
+D:\Proyect Visual Studio\Sys_Mvc_ControlAsitenciaPersonal\WebSite\bin\System.Web.Helpers.dll
+D:\Proyect Visual Studio\Sys_Mvc_ControlAsitenciaPersonal\WebSite\bin\System.Web.Mvc.dll
+D:\Proyect Visual Studio\Sys_Mvc_ControlAsitenciaPersonal\WebSite\bin\System.Web.Razor.dll
+D:\Proyect Visual Studio\Sys_Mvc_ControlAsitenciaPersonal\WebSite\bin\System.Web.Webpages.Deployment.dll
+D:\Proyect Visual Studio\Sys_Mvc_ControlAsitenciaPersonal\WebSite\bin\System.Web.Webpages.dll
+D:\Proyect Visual Studio\Sys_Mvc_ControlAsitenciaPersonal\WebSite\bin\System.Web.Webpages.Razor.dll
+D:\Proyect Visual Studio\Sys_Mvc_ControlAsitenciaPersonal\WebSite\bin\EntityFramework.xml
+D:\Proyect Visual Studio\Sys_Mvc_ControlAsitenciaPersonal\WebSite\bin\EntityFramework.SqlServer.xml
+D:\Proyect Visual Studio\Sys_Mvc_ControlAsitenciaPersonal\WebSite\bin\nunit.framework.xml
+D:\Proyect Visual Studio\Sys_Mvc_ControlAsitenciaPersonal\WebSite\bin\System.Web.Razor.xml
+D:\Proyect Visual Studio\Sys_Mvc_ControlAsitenciaPersonal\WebSite\bin\System.Web.Webpages.xml
+D:\Proyect Visual Studio\Sys_Mvc_ControlAsitenciaPersonal\WebSite\bin\System.Web.Webpages.Deployment.xml
+D:\Proyect Visual Studio\Sys_Mvc_ControlAsitenciaPersonal\WebSite\bin\System.Web.Webpages.Razor.xml
+D:\Proyect Visual Studio\Sys_Mvc_ControlAsitenciaPersonal\WebSite\bin\System.Web.Helpers.xml
+D:\Proyect Visual Studio\Sys_Mvc_ControlAsitenciaPersonal\WebSite\bin\System.Web.Mvc.xml
+D:\Proyect Visual Studio\Sys_Mvc_ControlAsitenciaPersonal\WebSite\obj\Debug\WebSite.dll
+D:\Proyect Visual Studio\Sys_Mvc_ControlAsitenciaPersonal\WebSite\obj\Debug\WebSite.pdb
+C:\Users\Administrador\Desktop\13-03-2016\Sys_Mvc_ControlAsitenciaPersonal\WebSite\bin\WebSite.dll.config
+C:\Users\Administrador\Desktop\13-03-2016\Sys_Mvc_ControlAsitenciaPersonal\WebSite\bin\WebSite.dll
+C:\Users\Administrador\Desktop\13-03-2016\Sys_Mvc_ControlAsitenciaPersonal\WebSite\bin\WebSite.pdb
+C:\Users\Administrador\Desktop\13-03-2016\Sys_Mvc_ControlAsitenciaPersonal\WebSite\bin\EntityFramework.dll
+C:\Users\Administrador\Desktop\13-03-2016\Sys_Mvc_ControlAsitenciaPersonal\WebSite\bin\EntityFramework.SqlServer.dll
+C:\Users\Administrador\Desktop\13-03-2016\Sys_Mvc_ControlAsitenciaPersonal\WebSite\bin\nunit.framework.dll
+C:\Users\Administrador\Desktop\13-03-2016\Sys_Mvc_ControlAsitenciaPersonal\WebSite\bin\System.Web.Helpers.dll
+C:\Users\Administrador\Desktop\13-03-2016\Sys_Mvc_ControlAsitenciaPersonal\WebSite\bin\System.Web.Mvc.dll
+C:\Users\Administrador\Desktop\13-03-2016\Sys_Mvc_ControlAsitenciaPersonal\WebSite\bin\System.Web.Razor.dll
+C:\Users\Administrador\Desktop\13-03-2016\Sys_Mvc_ControlAsitenciaPersonal\WebSite\bin\System.Web.Webpages.Deployment.dll
+C:\Users\Administrador\Desktop\13-03-2016\Sys_Mvc_ControlAsitenciaPersonal\WebSite\bin\System.Web.Webpages.dll
+C:\Users\Administrador\Desktop\13-03-2016\Sys_Mvc_ControlAsitenciaPersonal\WebSite\bin\System.Web.Webpages.Razor.dll
+C:\Users\Administrador\Desktop\13-03-2016\Sys_Mvc_ControlAsitenciaPersonal\WebSite\bin\EntityFramework.xml
+C:\Users\Administrador\Desktop\13-03-2016\Sys_Mvc_ControlAsitenciaPersonal\WebSite\bin\EntityFramework.SqlServer.xml
+C:\Users\Administrador\Desktop\13-03-2016\Sys_Mvc_ControlAsitenciaPersonal\WebSite\bin\nunit.framework.xml
+C:\Users\Administrador\Desktop\13-03-2016\Sys_Mvc_ControlAsitenciaPersonal\WebSite\bin\System.Web.Razor.xml
+C:\Users\Administrador\Desktop\13-03-2016\Sys_Mvc_ControlAsitenciaPersonal\WebSite\bin\System.Web.Webpages.xml
+C:\Users\Administrador\Desktop\13-03-2016\Sys_Mvc_ControlAsitenciaPersonal\WebSite\bin\System.Web.Webpages.Deployment.xml
+C:\Users\Administrador\Desktop\13-03-2016\Sys_Mvc_ControlAsitenciaPersonal\WebSite\bin\System.Web.Webpages.Razor.xml
+C:\Users\Administrador\Desktop\13-03-2016\Sys_Mvc_ControlAsitenciaPersonal\WebSite\bin\System.Web.Helpers.xml
+C:\Users\Administrador\Desktop\13-03-2016\Sys_Mvc_ControlAsitenciaPersonal\WebSite\bin\System.Web.Mvc.xml
+C:\Users\Administrador\Desktop\13-03-2016\Sys_Mvc_ControlAsitenciaPersonal\WebSite\obj\Debug\WebSite.dll
+C:\Users\Administrador\Desktop\13-03-2016\Sys_Mvc_ControlAsitenciaPersonal\WebSite\obj\Debug\WebSite.pdb
+C:\Users\Administrador\Desktop\13-03-2016\Sys_Mvc_ControlAsitenciaPersonal\WebSite\obj\Debug\WebSite.csprojResolveAssemblyReference.cache
+C:\Users\Administrador\Desktop\aaaa\Sys_Mvc_ControlAsitenciaPersonal\WebSite\bin\WebSite.dll.config
+C:\Users\Administrador\Desktop\aaaa\Sys_Mvc_ControlAsitenciaPersonal\WebSite\bin\WebSite.dll
+C:\Users\Administrador\Desktop\aaaa\Sys_Mvc_ControlAsitenciaPersonal\WebSite\bin\WebSite.pdb
+C:\Users\Administrador\Desktop\aaaa\Sys_Mvc_ControlAsitenciaPersonal\WebSite\bin\EntityFramework.dll
+C:\Users\Administrador\Desktop\aaaa\Sys_Mvc_ControlAsitenciaPersonal\WebSite\bin\EntityFramework.SqlServer.dll
+C:\Users\Administrador\Desktop\aaaa\Sys_Mvc_ControlAsitenciaPersonal\WebSite\bin\nunit.framework.dll
+C:\Users\Administrador\Desktop\aaaa\Sys_Mvc_ControlAsitenciaPersonal\WebSite\bin\System.Web.Helpers.dll
+C:\Users\Administrador\Desktop\aaaa\Sys_Mvc_ControlAsitenciaPersonal\WebSite\bin\System.Web.Mvc.dll
+C:\Users\Administrador\Desktop\aaaa\Sys_Mvc_ControlAsitenciaPersonal\WebSite\bin\System.Web.Razor.dll
+C:\Users\Administrador\Desktop\aaaa\Sys_Mvc_ControlAsitenciaPersonal\WebSite\bin\System.Web.Webpages.Deployment.dll
+C:\Users\Administrador\Desktop\aaaa\Sys_Mvc_ControlAsitenciaPersonal\WebSite\bin\System.Web.Webpages.dll
+C:\Users\Administrador\Desktop\aaaa\Sys_Mvc_ControlAsitenciaPersonal\WebSite\bin\System.Web.Webpages.Razor.dll
+C:\Users\Administrador\Desktop\aaaa\Sys_Mvc_ControlAsitenciaPersonal\WebSite\bin\EntityFramework.xml
+C:\Users\Administrador\Desktop\aaaa\Sys_Mvc_ControlAsitenciaPersonal\WebSite\bin\EntityFramework.SqlServer.xml
+C:\Users\Administrador\Desktop\aaaa\Sys_Mvc_ControlAsitenciaPersonal\WebSite\bin\nunit.framework.xml
+C:\Users\Administrador\Desktop\aaaa\Sys_Mvc_ControlAsitenciaPersonal\WebSite\bin\System.Web.Razor.xml
+C:\Users\Administrador\Desktop\aaaa\Sys_Mvc_ControlAsitenciaPersonal\WebSite\bin\System.Web.Webpages.xml
+C:\Users\Administrador\Desktop\aaaa\Sys_Mvc_ControlAsitenciaPersonal\WebSite\bin\System.Web.Webpages.Deployment.xml
+C:\Users\Administrador\Desktop\aaaa\Sys_Mvc_ControlAsitenciaPersonal\WebSite\bin\System.Web.Webpages.Razor.xml
+C:\Users\Administrador\Desktop\aaaa\Sys_Mvc_ControlAsitenciaPersonal\WebSite\bin\System.Web.Helpers.xml
+C:\Users\Administrador\Desktop\aaaa\Sys_Mvc_ControlAsitenciaPersonal\WebSite\bin\System.Web.Mvc.xml
+C:\Users\Administrador\Desktop\aaaa\Sys_Mvc_ControlAsitenciaPersonal\WebSite\obj\Debug\WebSite.csprojResolveAssemblyReference.cache
+C:\Users\Administrador\Desktop\aaaa\Sys_Mvc_ControlAsitenciaPersonal\WebSite\obj\Debug\WebSite.dll
+C:\Users\Administrador\Desktop\aaaa\Sys_Mvc_ControlAsitenciaPersonal\WebSite\obj\Debug\WebSite.pdb
+C:\Users\Jeysson\Desktop\SisWebAsistencia0\systemWeb\Sys_Mvc_ControlAsitenciaPersonal\WebSite\bin\WebSite.dll.config
+C:\Users\Jeysson\Desktop\SisWebAsistencia0\systemWeb\Sys_Mvc_ControlAsitenciaPersonal\WebSite\bin\WebSite.dll
+C:\Users\Jeysson\Desktop\SisWebAsistencia0\systemWeb\Sys_Mvc_ControlAsitenciaPersonal\WebSite\bin\WebSite.pdb
+C:\Users\Jeysson\Desktop\SisWebAsistencia0\systemWeb\Sys_Mvc_ControlAsitenciaPersonal\WebSite\bin\EntityFramework.dll
+C:\Users\Jeysson\Desktop\SisWebAsistencia0\systemWeb\Sys_Mvc_ControlAsitenciaPersonal\WebSite\bin\EntityFramework.SqlServer.dll
+C:\Users\Jeysson\Desktop\SisWebAsistencia0\systemWeb\Sys_Mvc_ControlAsitenciaPersonal\WebSite\bin\nunit.framework.dll
+C:\Users\Jeysson\Desktop\SisWebAsistencia0\systemWeb\Sys_Mvc_ControlAsitenciaPersonal\WebSite\bin\System.Web.Helpers.dll
+C:\Users\Jeysson\Desktop\SisWebAsistencia0\systemWeb\Sys_Mvc_ControlAsitenciaPersonal\WebSite\bin\System.Web.Mvc.dll
+C:\Users\Jeysson\Desktop\SisWebAsistencia0\systemWeb\Sys_Mvc_ControlAsitenciaPersonal\WebSite\bin\System.Web.Razor.dll
+C:\Users\Jeysson\Desktop\SisWebAsistencia0\systemWeb\Sys_Mvc_ControlAsitenciaPersonal\WebSite\bin\System.Web.Webpages.Deployment.dll
+C:\Users\Jeysson\Desktop\SisWebAsistencia0\systemWeb\Sys_Mvc_ControlAsitenciaPersonal\WebSite\bin\System.Web.Webpages.dll
+C:\Users\Jeysson\Desktop\SisWebAsistencia0\systemWeb\Sys_Mvc_ControlAsitenciaPersonal\WebSite\bin\System.Web.Webpages.Razor.dll
+C:\Users\Jeysson\Desktop\SisWebAsistencia0\systemWeb\Sys_Mvc_ControlAsitenciaPersonal\WebSite\bin\EntityFramework.xml
+C:\Users\Jeysson\Desktop\SisWebAsistencia0\systemWeb\Sys_Mvc_ControlAsitenciaPersonal\WebSite\bin\EntityFramework.SqlServer.xml
+C:\Users\Jeysson\Desktop\SisWebAsistencia0\systemWeb\Sys_Mvc_ControlAsitenciaPersonal\WebSite\bin\nunit.framework.xml
+C:\Users\Jeysson\Desktop\SisWebAsistencia0\systemWeb\Sys_Mvc_ControlAsitenciaPersonal\WebSite\bin\System.Web.Razor.xml
+C:\Users\Jeysson\Desktop\SisWebAsistencia0\systemWeb\Sys_Mvc_ControlAsitenciaPersonal\WebSite\bin\System.Web.Webpages.xml
+C:\Users\Jeysson\Desktop\SisWebAsistencia0\systemWeb\Sys_Mvc_ControlAsitenciaPersonal\WebSite\bin\System.Web.Webpages.Deployment.xml
+C:\Users\Jeysson\Desktop\SisWebAsistencia0\systemWeb\Sys_Mvc_ControlAsitenciaPersonal\WebSite\bin\System.Web.Webpages.Razor.xml
+C:\Users\Jeysson\Desktop\SisWebAsistencia0\systemWeb\Sys_Mvc_ControlAsitenciaPersonal\WebSite\bin\System.Web.Helpers.xml
+C:\Users\Jeysson\Desktop\SisWebAsistencia0\systemWeb\Sys_Mvc_ControlAsitenciaPersonal\WebSite\bin\System.Web.Mvc.xml
+C:\Users\Jeysson\Desktop\SisWebAsistencia0\systemWeb\Sys_Mvc_ControlAsitenciaPersonal\WebSite\obj\Debug\WebSite.dll
+C:\Users\Jeysson\Desktop\SisWebAsistencia0\systemWeb\Sys_Mvc_ControlAsitenciaPersonal\WebSite\obj\Debug\WebSite.pdb
+C:\Users\Jeysson\Desktop\SisWebAsistencia0\systemWeb\Sys_Mvc_ControlAsitenciaPersonal\WebSite\obj\Debug\WebSite.csprojResolveAssemblyReference.cache

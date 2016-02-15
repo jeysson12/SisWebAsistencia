@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="sys_web_controlAsistenciaPersonalEntities-Web.config Connection String" description="sys_web_controlAsistenciaPersonalEntities Connection String used in web.config by the application to access the database." defaultValue="metadata=res://*/Models.sys_web_controlAsistenciaPersonalEntities.csdl|res://*/Models.sys_web_controlAsistenciaPersonalEntities.ssdl|res://*/Models.sys_web_controlAsistenciaPersonalEntities.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=CIBERTEC\SQL2012TABULAR;initial catalog=sys_web_controlAsistenciaPersonal;integrated security=True;MultipleActiveResultSets=True;App=EntityFramework&quot;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Jeysson\\Desktop\\SisWebAsistencia0\\systemWeb\\Sys_Mvc_ControlAsitenciaPersonal\\WebSite\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='sys_web_controlAsistenciaPersonalEntities']/@connectionString" />
+  </parameter>
+</parameters>

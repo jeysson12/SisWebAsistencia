@@ -1,0 +1,417 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="sys_web_controlAsistenciaPersonalModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="AREAS">
+          <Key>
+            <PropertyRef Name="ID_AREA" />
+          </Key>
+          <Property Name="ID_AREA" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NOMBRE" Type="nvarchar" MaxLength="100" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ASISTENCIAS">
+          <Key>
+            <PropertyRef Name="ID_sis" />
+          </Key>
+          <Property Name="ID_sis" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="FECHA" Type="nvarchar" MaxLength="50" />
+          <Property Name="ID_EMPLEADO" Type="int" />
+          <Property Name="HORA_INGRESO" Type="nvarchar" MaxLength="50" />
+          <Property Name="HORA_SALIDA" Type="nvarchar" MaxLength="50" />
+          <Property Name="OBSERVACIONES" Type="nvarchar" MaxLength="200" />
+        </EntityType>
+        <EntityType Name="CARGOS">
+          <Key>
+            <PropertyRef Name="ID_CARGOS" />
+          </Key>
+          <Property Name="ID_CARGOS" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NOMBRE" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="ID_AREA" Type="int" />
+        </EntityType>
+        <EntityType Name="DISTRITOS">
+          <Key>
+            <PropertyRef Name="ID_DISTRITO" />
+          </Key>
+          <Property Name="ID_DISTRITO" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NOMBRE" Type="nvarchar" MaxLength="100" Nullable="false" />
+        </EntityType>
+        <EntityType Name="EMPLEADOS">
+          <Key>
+            <PropertyRef Name="ID_EMPLEADO" />
+          </Key>
+          <Property Name="ID_EMPLEADO" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="DNI" Type="char" MaxLength="8" Nullable="false" />
+          <Property Name="NOMBRES" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="APELLIDOS" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="SEXO" Type="char" MaxLength="1" Nullable="false" />
+          <Property Name="HORA_INGRESO" Type="time" Precision="7" Nullable="false" />
+          <Property Name="HORA_SALIDA" Type="time" Precision="7" Nullable="false" />
+          <Property Name="ID_AREA" Type="int" />
+          <Property Name="ID_CARGO" Type="int" />
+          <Property Name="ID_DISTRITO" Type="int" />
+          <Property Name="DIRECCION" Type="nvarchar" MaxLength="150" Nullable="false" />
+          <Property Name="TELEFONO" Type="nvarchar" MaxLength="20" Nullable="false" />
+          <Property Name="CELULAR" Type="nvarchar" MaxLength="20" Nullable="false" />
+        </EntityType>
+        <EntityType Name="USUARIOS">
+          <Key>
+            <PropertyRef Name="ID_USUARIO" />
+          </Key>
+          <Property Name="ID_USUARIO" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="CONTRASEÑA" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="TIPO" Type="varchar" MaxLength="15" Nullable="false" />
+          <Property Name="ID_EMPLEADO" Type="int" />
+          <Property Name="ACTIVO" Type="bit" />
+        </EntityType>
+        <Association Name="FK__CARGOS__ID_AREA__145C0A3F">
+          <End Role="AREAS" Type="Self.AREAS" Multiplicity="0..1" />
+          <End Role="CARGOS" Type="Self.CARGOS" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="AREAS">
+              <PropertyRef Name="ID_AREA" />
+            </Principal>
+            <Dependent Role="CARGOS">
+              <PropertyRef Name="ID_AREA" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__EMPLEADOS__ID_AR__173876EA">
+          <End Role="AREAS" Type="Self.AREAS" Multiplicity="0..1" />
+          <End Role="EMPLEADOS" Type="Self.EMPLEADOS" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="AREAS">
+              <PropertyRef Name="ID_AREA" />
+            </Principal>
+            <Dependent Role="EMPLEADOS">
+              <PropertyRef Name="ID_AREA" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__EMPLEADOS__ID_CA__182C9B23">
+          <End Role="CARGOS" Type="Self.CARGOS" Multiplicity="0..1" />
+          <End Role="EMPLEADOS" Type="Self.EMPLEADOS" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CARGOS">
+              <PropertyRef Name="ID_CARGOS" />
+            </Principal>
+            <Dependent Role="EMPLEADOS">
+              <PropertyRef Name="ID_CARGO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__EMPLEADOS__ID_DI__1920BF5C">
+          <End Role="DISTRITOS" Type="Self.DISTRITOS" Multiplicity="0..1" />
+          <End Role="EMPLEADOS" Type="Self.EMPLEADOS" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="DISTRITOS">
+              <PropertyRef Name="ID_DISTRITO" />
+            </Principal>
+            <Dependent Role="EMPLEADOS">
+              <PropertyRef Name="ID_DISTRITO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__USUARIOS__ID_EMP__1BFD2C07">
+          <End Role="EMPLEADOS" Type="Self.EMPLEADOS" Multiplicity="0..1" />
+          <End Role="USUARIOS" Type="Self.USUARIOS" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="EMPLEADOS">
+              <PropertyRef Name="ID_EMPLEADO" />
+            </Principal>
+            <Dependent Role="USUARIOS">
+              <PropertyRef Name="ID_EMPLEADO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="sys_web_controlAsistenciaPersonalModelStoreContainer">
+          <EntitySet Name="AREAS" EntityType="Self.AREAS" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ASISTENCIAS" EntityType="Self.ASISTENCIAS" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="CARGOS" EntityType="Self.CARGOS" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="DISTRITOS" EntityType="Self.DISTRITOS" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="EMPLEADOS" EntityType="Self.EMPLEADOS" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="USUARIOS" EntityType="Self.USUARIOS" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK__CARGOS__ID_AREA__145C0A3F" Association="Self.FK__CARGOS__ID_AREA__145C0A3F">
+            <End Role="AREAS" EntitySet="AREAS" />
+            <End Role="CARGOS" EntitySet="CARGOS" />
+          </AssociationSet>
+          <AssociationSet Name="FK__EMPLEADOS__ID_AR__173876EA" Association="Self.FK__EMPLEADOS__ID_AR__173876EA">
+            <End Role="AREAS" EntitySet="AREAS" />
+            <End Role="EMPLEADOS" EntitySet="EMPLEADOS" />
+          </AssociationSet>
+          <AssociationSet Name="FK__EMPLEADOS__ID_CA__182C9B23" Association="Self.FK__EMPLEADOS__ID_CA__182C9B23">
+            <End Role="CARGOS" EntitySet="CARGOS" />
+            <End Role="EMPLEADOS" EntitySet="EMPLEADOS" />
+          </AssociationSet>
+          <AssociationSet Name="FK__EMPLEADOS__ID_DI__1920BF5C" Association="Self.FK__EMPLEADOS__ID_DI__1920BF5C">
+            <End Role="DISTRITOS" EntitySet="DISTRITOS" />
+            <End Role="EMPLEADOS" EntitySet="EMPLEADOS" />
+          </AssociationSet>
+          <AssociationSet Name="FK__USUARIOS__ID_EMP__1BFD2C07" Association="Self.FK__USUARIOS__ID_EMP__1BFD2C07">
+            <End Role="EMPLEADOS" EntitySet="EMPLEADOS" />
+            <End Role="USUARIOS" EntitySet="USUARIOS" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="sys_web_controlAsistenciaPersonalModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="AREAS">
+          <Key>
+            <PropertyRef Name="ID_AREA" />
+          </Key>
+          <Property Name="ID_AREA" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NOMBRE" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="CARGOS" Relationship="Self.FK__CARGOS__ID_AREA__145C0A3F" FromRole="AREAS" ToRole="CARGOS" />
+          <NavigationProperty Name="EMPLEADOS" Relationship="Self.FK__EMPLEADOS__ID_AR__173876EA" FromRole="AREAS" ToRole="EMPLEADOS" />
+        </EntityType>
+        <EntityType Name="ASISTENCIAS">
+          <Key>
+            <PropertyRef Name="ID_sis" />
+          </Key>
+          <Property Name="ID_sis" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="FECHA" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ID_EMPLEADO" Type="Int32" />
+          <Property Name="HORA_INGRESO" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="HORA_SALIDA" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="OBSERVACIONES" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="CARGOS">
+          <Key>
+            <PropertyRef Name="ID_CARGOS" />
+          </Key>
+          <Property Name="ID_CARGOS" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NOMBRE" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ID_AREA" Type="Int32" />
+          <NavigationProperty Name="AREAS" Relationship="Self.FK__CARGOS__ID_AREA__145C0A3F" FromRole="CARGOS" ToRole="AREAS" />
+          <NavigationProperty Name="EMPLEADOS" Relationship="Self.FK__EMPLEADOS__ID_CA__182C9B23" FromRole="CARGOS" ToRole="EMPLEADOS" />
+        </EntityType>
+        <EntityType Name="DISTRITOS">
+          <Key>
+            <PropertyRef Name="ID_DISTRITO" />
+          </Key>
+          <Property Name="ID_DISTRITO" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NOMBRE" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="EMPLEADOS" Relationship="Self.FK__EMPLEADOS__ID_DI__1920BF5C" FromRole="DISTRITOS" ToRole="EMPLEADOS" />
+        </EntityType>
+        <EntityType Name="EMPLEADOS">
+          <Key>
+            <PropertyRef Name="ID_EMPLEADO" />
+          </Key>
+          <Property Name="ID_EMPLEADO" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="DNI" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="NOMBRES" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="APELLIDOS" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="SEXO" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="HORA_INGRESO" Type="Time" Nullable="false" Precision="7" />
+          <Property Name="HORA_SALIDA" Type="Time" Nullable="false" Precision="7" />
+          <Property Name="ID_AREA" Type="Int32" />
+          <Property Name="ID_CARGO" Type="Int32" />
+          <Property Name="ID_DISTRITO" Type="Int32" />
+          <Property Name="DIRECCION" Type="String" MaxLength="150" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="TELEFONO" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CELULAR" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="AREAS" Relationship="Self.FK__EMPLEADOS__ID_AR__173876EA" FromRole="EMPLEADOS" ToRole="AREAS" />
+          <NavigationProperty Name="CARGOS" Relationship="Self.FK__EMPLEADOS__ID_CA__182C9B23" FromRole="EMPLEADOS" ToRole="CARGOS" />
+          <NavigationProperty Name="DISTRITOS" Relationship="Self.FK__EMPLEADOS__ID_DI__1920BF5C" FromRole="EMPLEADOS" ToRole="DISTRITOS" />
+          <NavigationProperty Name="USUARIOS" Relationship="Self.FK__USUARIOS__ID_EMP__1BFD2C07" FromRole="EMPLEADOS" ToRole="USUARIOS" />
+        </EntityType>
+        <EntityType Name="USUARIOS">
+          <Key>
+            <PropertyRef Name="ID_USUARIO" />
+          </Key>
+          <Property Name="ID_USUARIO" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CONTRASEÑA" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="TIPO" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ID_EMPLEADO" Type="Int32" />
+          <Property Name="ACTIVO" Type="Boolean" />
+          <NavigationProperty Name="EMPLEADOS" Relationship="Self.FK__USUARIOS__ID_EMP__1BFD2C07" FromRole="USUARIOS" ToRole="EMPLEADOS" />
+        </EntityType>
+        <Association Name="FK__CARGOS__ID_AREA__145C0A3F">
+          <End Role="AREAS" Type="Self.AREAS" Multiplicity="0..1" />
+          <End Role="CARGOS" Type="Self.CARGOS" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="AREAS">
+              <PropertyRef Name="ID_AREA" />
+            </Principal>
+            <Dependent Role="CARGOS">
+              <PropertyRef Name="ID_AREA" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__EMPLEADOS__ID_AR__173876EA">
+          <End Role="AREAS" Type="Self.AREAS" Multiplicity="0..1" />
+          <End Role="EMPLEADOS" Type="Self.EMPLEADOS" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="AREAS">
+              <PropertyRef Name="ID_AREA" />
+            </Principal>
+            <Dependent Role="EMPLEADOS">
+              <PropertyRef Name="ID_AREA" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__EMPLEADOS__ID_CA__182C9B23">
+          <End Role="CARGOS" Type="Self.CARGOS" Multiplicity="0..1" />
+          <End Role="EMPLEADOS" Type="Self.EMPLEADOS" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CARGOS">
+              <PropertyRef Name="ID_CARGOS" />
+            </Principal>
+            <Dependent Role="EMPLEADOS">
+              <PropertyRef Name="ID_CARGO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__EMPLEADOS__ID_DI__1920BF5C">
+          <End Role="DISTRITOS" Type="Self.DISTRITOS" Multiplicity="0..1" />
+          <End Role="EMPLEADOS" Type="Self.EMPLEADOS" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="DISTRITOS">
+              <PropertyRef Name="ID_DISTRITO" />
+            </Principal>
+            <Dependent Role="EMPLEADOS">
+              <PropertyRef Name="ID_DISTRITO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__USUARIOS__ID_EMP__1BFD2C07">
+          <End Role="EMPLEADOS" Type="Self.EMPLEADOS" Multiplicity="0..1" />
+          <End Role="USUARIOS" Type="Self.USUARIOS" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="EMPLEADOS">
+              <PropertyRef Name="ID_EMPLEADO" />
+            </Principal>
+            <Dependent Role="USUARIOS">
+              <PropertyRef Name="ID_EMPLEADO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="sys_web_controlAsistenciaPersonalEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="AREAS" EntityType="Self.AREAS" />
+          <EntitySet Name="ASISTENCIAS" EntityType="Self.ASISTENCIAS" />
+          <EntitySet Name="CARGOS" EntityType="Self.CARGOS" />
+          <EntitySet Name="DISTRITOS" EntityType="Self.DISTRITOS" />
+          <EntitySet Name="EMPLEADOS" EntityType="Self.EMPLEADOS" />
+          <EntitySet Name="USUARIOS" EntityType="Self.USUARIOS" />
+          <AssociationSet Name="FK__CARGOS__ID_AREA__145C0A3F" Association="Self.FK__CARGOS__ID_AREA__145C0A3F">
+            <End Role="AREAS" EntitySet="AREAS" />
+            <End Role="CARGOS" EntitySet="CARGOS" />
+          </AssociationSet>
+          <AssociationSet Name="FK__EMPLEADOS__ID_AR__173876EA" Association="Self.FK__EMPLEADOS__ID_AR__173876EA">
+            <End Role="AREAS" EntitySet="AREAS" />
+            <End Role="EMPLEADOS" EntitySet="EMPLEADOS" />
+          </AssociationSet>
+          <AssociationSet Name="FK__EMPLEADOS__ID_CA__182C9B23" Association="Self.FK__EMPLEADOS__ID_CA__182C9B23">
+            <End Role="CARGOS" EntitySet="CARGOS" />
+            <End Role="EMPLEADOS" EntitySet="EMPLEADOS" />
+          </AssociationSet>
+          <AssociationSet Name="FK__EMPLEADOS__ID_DI__1920BF5C" Association="Self.FK__EMPLEADOS__ID_DI__1920BF5C">
+            <End Role="DISTRITOS" EntitySet="DISTRITOS" />
+            <End Role="EMPLEADOS" EntitySet="EMPLEADOS" />
+          </AssociationSet>
+          <AssociationSet Name="FK__USUARIOS__ID_EMP__1BFD2C07" Association="Self.FK__USUARIOS__ID_EMP__1BFD2C07">
+            <End Role="EMPLEADOS" EntitySet="EMPLEADOS" />
+            <End Role="USUARIOS" EntitySet="USUARIOS" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="sys_web_controlAsistenciaPersonalModelStoreContainer" CdmEntityContainer="sys_web_controlAsistenciaPersonalEntities">
+          <EntitySetMapping Name="AREAS">
+            <EntityTypeMapping TypeName="sys_web_controlAsistenciaPersonalModel.AREAS">
+              <MappingFragment StoreEntitySet="AREAS">
+                <ScalarProperty Name="ID_AREA" ColumnName="ID_AREA" />
+                <ScalarProperty Name="NOMBRE" ColumnName="NOMBRE" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ASISTENCIAS">
+            <EntityTypeMapping TypeName="sys_web_controlAsistenciaPersonalModel.ASISTENCIAS">
+              <MappingFragment StoreEntitySet="ASISTENCIAS">
+                <ScalarProperty Name="ID_sis" ColumnName="ID_sis" />
+                <ScalarProperty Name="FECHA" ColumnName="FECHA" />
+                <ScalarProperty Name="ID_EMPLEADO" ColumnName="ID_EMPLEADO" />
+                <ScalarProperty Name="HORA_INGRESO" ColumnName="HORA_INGRESO" />
+                <ScalarProperty Name="HORA_SALIDA" ColumnName="HORA_SALIDA" />
+                <ScalarProperty Name="OBSERVACIONES" ColumnName="OBSERVACIONES" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CARGOS">
+            <EntityTypeMapping TypeName="sys_web_controlAsistenciaPersonalModel.CARGOS">
+              <MappingFragment StoreEntitySet="CARGOS">
+                <ScalarProperty Name="ID_CARGOS" ColumnName="ID_CARGOS" />
+                <ScalarProperty Name="NOMBRE" ColumnName="NOMBRE" />
+                <ScalarProperty Name="ID_AREA" ColumnName="ID_AREA" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DISTRITOS">
+            <EntityTypeMapping TypeName="sys_web_controlAsistenciaPersonalModel.DISTRITOS">
+              <MappingFragment StoreEntitySet="DISTRITOS">
+                <ScalarProperty Name="ID_DISTRITO" ColumnName="ID_DISTRITO" />
+                <ScalarProperty Name="NOMBRE" ColumnName="NOMBRE" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="EMPLEADOS">
+            <EntityTypeMapping TypeName="sys_web_controlAsistenciaPersonalModel.EMPLEADOS">
+              <MappingFragment StoreEntitySet="EMPLEADOS">
+                <ScalarProperty Name="ID_EMPLEADO" ColumnName="ID_EMPLEADO" />
+                <ScalarProperty Name="DNI" ColumnName="DNI" />
+                <ScalarProperty Name="NOMBRES" ColumnName="NOMBRES" />
+                <ScalarProperty Name="APELLIDOS" ColumnName="APELLIDOS" />
+                <ScalarProperty Name="SEXO" ColumnName="SEXO" />
+                <ScalarProperty Name="HORA_INGRESO" ColumnName="HORA_INGRESO" />
+                <ScalarProperty Name="HORA_SALIDA" ColumnName="HORA_SALIDA" />
+                <ScalarProperty Name="ID_AREA" ColumnName="ID_AREA" />
+                <ScalarProperty Name="ID_CARGO" ColumnName="ID_CARGO" />
+                <ScalarProperty Name="ID_DISTRITO" ColumnName="ID_DISTRITO" />
+                <ScalarProperty Name="DIRECCION" ColumnName="DIRECCION" />
+                <ScalarProperty Name="TELEFONO" ColumnName="TELEFONO" />
+                <ScalarProperty Name="CELULAR" ColumnName="CELULAR" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="USUARIOS">
+            <EntityTypeMapping TypeName="sys_web_controlAsistenciaPersonalModel.USUARIOS">
+              <MappingFragment StoreEntitySet="USUARIOS">
+                <ScalarProperty Name="ID_USUARIO" ColumnName="ID_USUARIO" />
+                <ScalarProperty Name="CONTRASEÑA" ColumnName="CONTRASEÑA" />
+                <ScalarProperty Name="TIPO" ColumnName="TIPO" />
+                <ScalarProperty Name="ID_EMPLEADO" ColumnName="ID_EMPLEADO" />
+                <ScalarProperty Name="ACTIVO" ColumnName="ACTIVO" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Ninguno" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
